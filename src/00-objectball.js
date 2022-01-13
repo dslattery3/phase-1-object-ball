@@ -1,4 +1,4 @@
-const gameStats = {
+const gameObject = {
     home: {
       teamName: "Brooklyn Nets",
       colors: ['Black', 'White'],
@@ -22,3 +22,19 @@ const gameStats = {
         }
     } 
   }
+
+function numPointsScored(playerName){
+    const game = gameObject
+    debugger
+    for (const gameKey in game){
+        const teamObj = game[gameKey]
+        const playerObj = teamObj.players
+        debugger
+        for (const playerKey in playerObj){
+            debugger
+            if (playerKey === playerName){
+                return playerObj[playerName].points
+            }
+        }
+    }
+}
