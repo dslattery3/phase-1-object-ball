@@ -25,16 +25,18 @@ const gameObject = {
 
 function numPointsScored(playerName){
     const game = gameObject
-    debugger
+    // debugger
     for (const gameKey in game){
-        const teamObj = game[gameKey]
-        const playerObj = teamObj.players
-        debugger
-        for (const playerKey in playerObj){
-            debugger
-            if (playerKey === playerName){
-                return playerObj[playerName].points
+        const teamObj = game[gameKey] //sets team obj to home or away
+        const playerObj = teamObj.players //sets playerObj to players on home or away
+        // debugger
+        for (const playerKey in playerObj){  
+            // debugger
+            if (playerKey === playerName){ //searches player from home or away with input name
+                return playerObj[playerName].points //player's stats
             }
         }
     }
 }
+
+function shoeSize(playerName)
