@@ -1,4 +1,4 @@
-{
+const gameStats = {
     home: {
       teamName: "Brooklyn Nets",
       colors: ['Black', 'White'],
